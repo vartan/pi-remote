@@ -1,8 +1,4 @@
 
- branch: master  pi-remote / css / style.css
-Michael Vartanvartan 6 minutes ago layout change
-1 contributor
-279 lines (227 sloc)  4.718 kb RawBlameHistory   
 html {
     height: 100%;
     width: 100%;
@@ -77,6 +73,13 @@ body {
     height: 50px;
     font-size: 14pt;
     font-weight: 400;
+}
+.scrollbody {
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden; /*stupid android doesn't support overflow-y:scroll only*/
+    -webkit-overflow-scrolling: touch;
+    padding-bottom:50px;
 }
 
 nav .nav.navbar-nav {
