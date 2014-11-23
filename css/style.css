@@ -80,7 +80,7 @@ body {
 }
 
 nav .nav.navbar-nav {
-background:linear-gradient(rgba(255,255,255,0.95),rgba(247,247,247,1)) !important;
+background:linear-gradient(rgba(247,247,247,0.95),rgba(247,247,247,1)) !important;
 }
 /*
 nav.navbar {
@@ -153,6 +153,9 @@ li.nav-back-arrow {
 }
 
 @media (max-width: 768px) {
+    nav .nav.navbar-nav {
+        background:white !important;
+    }
     h1 small {
         display: block;
     }
