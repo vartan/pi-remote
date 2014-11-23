@@ -153,6 +153,9 @@ li.nav-back-arrow {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        background:white !important;
+    }
     h1 small {
         display: block;
     }
