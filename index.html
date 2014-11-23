@@ -30,8 +30,8 @@
       <a href="#" class="navbar-brand">Remote</a>
     </div>
     <!--
-    <li class="nav-back-arrow">
-      <a href="#wat"><span style="margin-top:-9px;" class="fa fa-2x fa-angle-left pull-left"></span>Back</a>
+    <li class="nav-back col-xs-12-arrow">
+      <a href="#wat fa-2x"><span style="margin-top:-9px;" class="fa fa-2x fa-angle-left pull-left"></span>Back</a>
     </li>
     -->
     <div id="tabBar" class="tabs" style="display: block;">
@@ -67,29 +67,42 @@
 <div class="appbody">
   <div class="container">
     <h1>test</h1>
-    <a class="btn btn-lg btn-default col-xs-5 control-btn" href="#">
-      <i class="fa fa-power-off fa-2x pull-left"></i> Power
-    </a>
-    <a class="btn btn-lg btn-danger col-xs-5 control-btn col-xs-offset-2" href="#">
-      <i class="fa fa-tachometer fa-2x pull-left"></i> Temperature
-    </a>
+    <div class="col-xs-12 col-md-4 control-button-container text-center">
+      <a class="btn col-xs-12 btn-lg btn-danger col-xs-12" href="#">
+        <i class="fa fa-2x fa-power-off pull-left"></i> Power
+      </a>
+    </div>
+    <div class="col-xs-6 col-md-4 control-button-container text-center">
+      <a class="btn btn-lg btn-danger col-xs-12" href="#">
+        <i class="fa fa-2x fa-adjust pull-left"></i> Ember Brightness
+      </a>
+    </div>
+    <div class="col-xs-6 col-md-4 control-button-container text-center">
+      <a class="btn btn-lg btn-danger col-xs-12" href="#">
+        <i class="fa fa-2x fa-tachometer pull-left"></i> Temperature
+      </a>
+    </div>
+    <div class="col-xs-6 col-md-4 control-button-container text-center">
+      <a class="btn btn-lg btn-warning col-xs-12" href="#">
+        <i class="fa fa-2x fa-fire pull-left"></i> Flame Color
+      </a>
+    </div>
+    <div class="col-xs-6 col-md-4 control-button-container text-center">
+      <a class="btn btn-lg btn-warning col-xs-12" href="#">
+        <i class="fa fa-2x fa-sun-o pull-left fa-spin"></i> Flame Speed
+      </a>
+    </div>
 
-    <a class="btn btn-lg btn-danger col-xs-5 control-btn" href="#">
-      <i class="fa fa-fire fa-2x pull-left"></i> Flame Color
-    </a>
-
-    <a class="btn btn-lg btn-danger col-xs-5 control-btn col-xs-offset-2" href="#">
-      <i class="fa fa-sun-o fa-2x pull-left fa-spin"></i> Flame Speed
-    </a>
-
-
-    <a class="btn btn-lg btn-primary col-xs-5 control-btn" href="#">
-      <i class="fa fa-lightbulb-o fa-2x pull-left"></i> Backlight
-    </a>
-
-    <a class="btn btn-lg btn-primary col-xs-5 control-btn col-xs-offset-2" href="#">
-      <i class="fa fa-life-ring fa-2x pull-left fa-spin"></i> Fan Speed
-    </a>
+    <div class="col-xs-6 col-md-4 control-button-container text-center">
+      <a class="btn btn-lg btn-primary col-xs-12" href="#">
+        <i class="fa fa-2x fa-lightbulb-o pull-left"></i> Backlight
+      </a>
+    </div>
+    <div class="col-xs-6 col-md-4 control-button-container text-center">
+      <a class="btn btn-lg btn-primary col-xs-12" href="#">
+        <i class="fa fa-2x fa-life-ring pull-left fa-spin"></i> Fan Speed
+      </a>
+    </div>
  </div>
 
 
@@ -104,4 +117,3 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
-

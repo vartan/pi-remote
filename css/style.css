@@ -1,3 +1,8 @@
+
+ branch: master  pi-remote / css / style.css
+Michael Vartanvartan 6 minutes ago layout change
+1 contributor
+279 lines (227 sloc)  4.718 kb RawBlameHistory   
 html {
     height: 100%;
     width: 100%;
@@ -270,6 +275,9 @@ a.navbar-brand {
             color:#595959 !important;
 
 }
-.control-btn {
+.control-button-container {
     margin-bottom:20px;
+}
+.control-button-container a {
+line-height:2em;
 }
