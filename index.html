@@ -23,7 +23,7 @@
     <![endif]-->
   </head>
 
-  <body ontouchmove="event.preventDefault()">
+  <body>
 
 <nav role="navigation" class="navbar navbar-default navbar-fixed-top navbar-nav">
   <div class="nav navbar-nav">
@@ -108,7 +108,11 @@
 
 
 </div>
-
+<script>
+document.ontouchmove = function(event){
+    event.preventDefault();
+}
+</script>
 
   </body>
 </html>
