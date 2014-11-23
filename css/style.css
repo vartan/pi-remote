@@ -270,6 +270,9 @@ a.navbar-brand {
             color:#595959 !important;
 
 }
-.control-btn {
+.control-button-container {
     margin-bottom:20px;
+}
+.control-button-container a {
+line-height:2em;
 }
