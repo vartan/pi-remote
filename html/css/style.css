@@ -1,0 +1,291 @@
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #f2f2f6;
+    overflow: hidden;
+}
+
+.nav-justified li {
+    float: none;
+}
+.appbody {
+    margin-top:50px;
+}
+.navbar {
+    box-sizing: content-box !important;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.navbar-fixed-top {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.appbg {
+    background: #f2f2f6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2),
+    0 0 1px black;
+
+}
+
+.tabs .nav-pills li a {
+    height: 50px;
+    color: #929292;
+}
+
+.tabs .nav-pills li.active a {
+    background: transparent;
+    color: #4579fb;
+}
+
+.tabs .nav-pills a, .tabs .nav-pills a:active, .tabs .nav-pills a:hover, .tabs .nav-pills a:focus {
+    background: transparent;
+}
+
+.tabs {
+    bottom: 0 !important;
+    margin: 0;
+    height: 50px;
+    background: linear-gradient(rgba(247, 247, 247, 0.95), rgba(247, 247, 247, 1));
+}
+
+
+.nav-back-arrow a:hover, .nav-back-arrow a:active {
+    color: white !important;
+}
+
+.navbar-nav > li > a {
+    padding: 15px;
+    height: 50px;
+    font-size: 14pt;
+    font-weight: 400;
+}
+.scrollbody {
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden; /*stupid android doesn't support overflow-y:scroll only*/
+    -webkit-overflow-scrolling: touch;
+    padding-bottom:50px;
+}
+
+nav .nav.navbar-nav {
+background:linear-gradient(rgba(247,247,247,0.95),rgba(247,247,247,1)) !important;
+}
+/*
+nav.navbar {
+    border-color: darkred !important;
+}
+*/
+.header-arrow {
+    display: inline-block;
+    -webkit-transform: scale(1, 2);
+    margin-right: 8px;
+    font-weight: 500;
+    line-height: 14px;
+    vertical-align: top;
+}
+
+.panel {
+    margin-top: 20px;
+}
+
+.navbar-nav, .nav {
+    max-height: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-fixed-top .nav li {
+    float: left;
+}
+
+.navbar-fixed-top .navbar-header a, .navbar-fixed-top .navbar-header a:hover {
+    font-weight: 500;
+    font-size: 14pt;
+    color: white;
+}
+
+.navbar-fixed-top {
+    margin: 0;
+}
+
+.tabs .fa {
+    display: none;
+}
+
+li.nav-back-arrow {
+    display: none;
+}
+
+.tabs > .nav > li > a {
+    line-height: 50px;
+    font-size: 14pt;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: auto;
+}
+
+.tabs > .nav > li {
+    width: auto;
+    height: 50px;
+    padding: 0;
+}
+
+.tabs {
+
+    background: transparent;
+}
+
+.tabs > .nav {
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    nav .nav.navbar-nav {
+        background:white !important;
+    }
+    h1 small {
+        display: block;
+    }
+
+    .container {
+        border-radius: 0;
+        padding-bottom: 50px;
+    }
+
+    .tabs {
+        position: fixed;
+        margin: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(rgba(277, 277, 277, 0.95), rgba(277, 277, 277, 1));
+        border-top: 0.5px solid #C1C1C1;
+        box-shadow: 0 -0.5px 0 #C1C1C1;
+        max-height: 51px;
+    }
+
+    .tabs > .nav > li > a {
+        height: 50px;
+        min-width: 10px;
+        border-radius: 0;
+        font-weight: normal;
+        font-size: 8pt;
+        line-height: 9pt;
+    }
+
+    .tabs .fa {
+        display: inline-block;
+    }
+
+    li.nav-back-arrow {
+        display: inline-block;
+    }
+
+    .tabs .nav-pills > li {
+        float: none;
+    }
+
+    .tabs .nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+
+    .tabs .nav-justified > li > a {
+        margin-bottom: 0 !important;
+    }
+
+    .bottom-icon {
+        display: block !important;
+        font-size: 20pt !important;
+        margin-top: 6px;
+        margin-bottom: 3px;
+    }
+
+    .navbar-fixed-top .navbar-header {
+        position: fixed;
+        left: 50%;
+        top: 0;
+        line-height: 50px;
+    }
+
+    .navbar-fixed-top .navbar-header .navbar-brand {
+        position: relative;
+        left: -50%;
+    }
+
+
+}
+
+.tabs > .nav > li > a:active {
+    color: #ccccff;
+}
+
+@media (min-width:769px) {
+    .tabs > .nav > li > a {
+        font-size: 12pt;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: auto;
+        background: #f2f2f6;
+        line-height: 40px;
+        height: 40px;
+        box-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.2);
+        margin: 5px -1px;
+        color: #595959;
+        border-radius: 0;
+    }
+
+    .tabs > .nav > li:first-child > a {
+        border-radius: 4px 0 0 4px;
+    }
+
+    .tabs > .nav > li:last-child > a {
+        border-radius: 0 4px 4px 0;
+    }
+
+    .tabs > .nav > li > a:hover {
+        background: white
+    }
+
+    .tabs > .nav > li > a:active {
+        background: #e3e3e3;
+        color: black;
+    }
+
+    .tabs > .nav > li.active a {
+        background: #6b6b6c;
+        color: white;
+    }
+}
+
+.btn-transparent {
+    background: transparent;
+}
+
+
+a.navbar-brand {
+            color:#595959 !important;
+
+}
+.control-button-container {
+    margin-bottom:20px;
+}
+.control-button-container a {
+line-height:2em;
+}
