@@ -20,6 +20,10 @@ var getCommandsForDevice = function(deviceName) {
   }
 };
 var getDevice = function (error, stdout, stderr) {
+  if(error) {
+    console.log("irsend not available.");
+    return;
+  }
   var lines = stderr.split("\n");
   for(var lineIndex in lines) {
     var line = lines[lineIndex];
