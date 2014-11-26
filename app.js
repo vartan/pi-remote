@@ -80,7 +80,7 @@ app.use(express.static(__dirname + '/html'));
 app.get('/send/:device/:key', function(req, res) {
 
   var deviceName = req.param("device");
-  var key = "KEY_"+req.param("key").toUpperCase();
+  var key = req.param("key").toUpperCase();
 
   // Make sure that the user has requested a valid device 
   if(!devices.hasOwnProperty(deviceName)) {
