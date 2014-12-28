@@ -1,22 +1,36 @@
 
 html {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
+    min-height: 100%;
+    min-width: 100%;
 
+}
+html {
+    text-size-adjust: 100% !important; /* Prevent font scaling in landscape */
+    webkit-text-size-adjust: 100% !important; /* Prevent font scaling in landscape */
+}
 body {
-    height: 100%;
-    width: 100%;
-    background: #f2f2f6;
-    overflow: hidden;
-}
 
+    min-height: 100%;
+    min-width: 100%;
+    background: #f2f2f6;
+}
+.hidden {
+    display: none;
+}
 .nav-justified li {
     float: none;
 }
-.appbody {
-    margin-top:50px;
+body {
+    padding-top:50px;
+}
+.buttongroup {
+	padding-top:15px;
+	margin:0;
+ 	padding-left:0; padding-right:0;
+	background:rgba(255,255,255,.05);
+	margin-bottom:5px;
+	box-shadow:0 0 3px rgba(0,0,0,.1);
+
 }
 .navbar {
     box-sizing: content-box !important;
@@ -73,13 +87,6 @@ body {
     height: 50px;
     font-size: 14pt;
     font-weight: 400;
-}
-.scrollbody {
-    height: 100%;
-    overflow: scroll;
-    overflow-x: hidden; /*stupid android doesn't support overflow-y:scroll only*/
-    -webkit-overflow-scrolling: touch;
-    padding-bottom:50px;
 }
 
 nav .nav.navbar-nav {
