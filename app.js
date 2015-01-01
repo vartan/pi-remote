@@ -92,7 +92,7 @@ app.get('/send/:device/:key', function(req, res) {
   var device = devices[deviceName];
   var deviceKeyFound = false;
   for(var i = 0; i < device.length; i++) {
-    if(device[i] == key) {
+    if(device[i] === key) {
       deviceKeyFound = true; 
       break;
     }
